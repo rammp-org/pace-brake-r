@@ -3171,7 +3171,7 @@
 		(uuid "face984a-4946-4837-b29e-3791b6f369f7")
 	)
 	(image
-		(at 146.05 27.94)
+		(at 142.24 -15.24)
 		(uuid "95f54e83-a63a-4513-b968-401b8e7547da")
 		(data "iVBORw0KGgoAAAANSUhEUgAACjsAAAP9CAYAAADR000DAAAABHNCSVQICAgIfAhkiAAAIABJREFU"
 			"eJzs3emXbFd55/nfs88QkXdEQkgIhEGAJYEE2MYYbLDAgO0qXMYuqHJNtld3Vy/36nrXq1cPf0S/"
@@ -15915,7 +15915,7 @@
 		)
 	)
 	(image
-		(at -8.89 127)
+		(at -48.26 57.15)
 		(uuid "bbbd9eb5-068a-4e12-a81b-3f289775b973")
 		(data "iVBORw0KGgoAAAANSUhEUgAAA7oAAAJ9CAYAAAAbng7VAAAABHNCSVQICAgIfAhkiAAAIABJREFU"
 			"eJzs3X9YVHXe//EXijoU5GC2DZspmFaYlrB2Kaxed2CtOebeBrfuBumWo96rWHsX6Fa6fnddrE2l"
@@ -17028,7 +17028,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 64.516 122.174 90)
 			(hide yes)
 			(show_name no)
@@ -17748,7 +17748,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
 			(at 238.76 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -17838,7 +17838,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 162.814 129.794 90)
 			(hide yes)
 			(show_name no)
@@ -17917,7 +17917,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 117.094 159.004 90)
 			(hide yes)
 			(show_name no)
@@ -18352,7 +18352,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 226.314 127.254 90)
 			(hide yes)
 			(show_name no)
@@ -18945,7 +18945,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 92.456 122.174 90)
 			(hide yes)
 			(show_name no)
@@ -19025,7 +19025,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 129.54 109.22 0)
 			(hide yes)
 			(show_name no)
