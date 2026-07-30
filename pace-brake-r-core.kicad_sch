@@ -1043,6 +1043,105 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "imported-project-library:3296W-1-203LF"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2945,7 +3044,7 @@
 	)
 	(rectangle
 		(start 168.91 13.97)
-		(end 232.41 63.5)
+		(end 220.98 46.99)
 		(stroke
 			(width 0)
 			(type solid)
@@ -2955,6 +3054,19 @@
 			(color 179 239 255 0.1019607843)
 		)
 		(uuid "f44bd237-10fc-493c-ac93-8aa1074c5879")
+	)
+	(rectangle
+		(start 168.91 48.26)
+		(end 220.98 83.82)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 186 255 210 0.1019607843)
+		)
+		(uuid "f97ed237-b3e8-42c9-8166-ab48c9b7149c")
 	)
 	(rectangle
 		(start 107.95 85.09)
@@ -3009,6 +3121,16 @@
 		)
 		(uuid "96bad6c7-878b-44aa-96a1-823b532632e3")
 	)
+	(text "Mounting Holes"
+		(exclude_from_sim no)
+		(at 177.292 50.292 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "acb679eb-048f-4a34-8aec-d9ea42b12b20")
+	)
 	(text "Brake Resistor\n"
 		(exclude_from_sim no)
 		(at 160.02 87.122 0)
@@ -3059,15 +3181,35 @@
 		)
 		(uuid "e1d20d7a-9cc4-480a-a9ce-2bcc967eec1e")
 	)
-	(text "Adjustable V Ref\n"
+	(text "Adjustable Trimmer Pot.\n\n"
 		(exclude_from_sim no)
-		(at 46.99 132.08 0)
+		(at 44.196 135.636 0)
 		(effects
 			(font
 				(size 0.6096 0.6096)
 			)
 		)
 		(uuid "fe890c07-21cf-4a21-8817-edc3e5cdbcd3")
+	)
+	(text_box "voltage divider\n\nv_out = v_in*(R1/R2)"
+		(exclude_from_sim no)
+		(at 36.83 115.57 0)
+		(size 17.78 12.7)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "003eb6a5-f336-466c-a382-e001ffce74c4")
 	)
 	(text_box "in & out cap choose\nLOW ESR"
 		(exclude_from_sim no)
@@ -3129,6 +3271,26 @@
 		)
 		(uuid "c5ede61c-c8be-4248-86a1-94872e4604c0")
 	)
+	(text_box "use 90 degree mounting hole sockets so board lives in-line with components"
+		(exclude_from_sim no)
+		(at 222.25 50.8 0)
+		(size 27.94 10.16)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "edc632fe-8b01-4654-808c-e367df51b788")
+	)
 	(text_box "L1 will be switching at ~150Khz\nchoose sat curr. >1.2A"
 		(exclude_from_sim no)
 		(at 91.44 60.96 0)
@@ -3156,7 +3318,7 @@
 		(uuid "0394391b-b101-4e63-9dcc-a125599891f1")
 	)
 	(junction
-		(at 190.5 34.29)
+		(at 184.15 26.67)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1cc06120-bb17-45ec-823f-5bdbe93e16b0")
@@ -3421,16 +3583,6 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 149.86) (xy 63.5 160.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2ad8fc38-d536-44bd-82a1-ce6eed55b50c")
-	)
-	(wire
-		(pts
 			(xy 111.76 43.18) (xy 127 43.18)
 		)
 		(stroke
@@ -3458,6 +3610,16 @@
 			(type default)
 		)
 		(uuid "3935392d-1ee4-4d71-b264-894e2e8b3ecb")
+	)
+	(wire
+		(pts
+			(xy 63.5 139.7) (xy 63.5 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39f088d7-51bc-44e0-8d20-2178bba39b39")
 	)
 	(wire
 		(pts
@@ -3591,7 +3753,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 36.83) (xy 199.39 36.83)
+			(xy 184.15 29.21) (xy 193.04 29.21)
 		)
 		(stroke
 			(width 0)
@@ -3781,16 +3943,6 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 139.7) (xy 63.5 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aca9be4f-4bb8-46b1-84e6-249b6aa02790")
-	)
-	(wire
-		(pts
 			(xy 162.56 100.33) (xy 179.07 100.33)
 		)
 		(stroke
@@ -3798,6 +3950,16 @@
 			(type default)
 		)
 		(uuid "b8d44056-a495-4602-bf27-99724505b85d")
+	)
+	(wire
+		(pts
+			(xy 74.93 139.7) (xy 78.74 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bae4de05-826e-4411-9a20-bd81c8faf1a5")
 	)
 	(wire
 		(pts
@@ -3881,7 +4043,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 139.7) (xy 78.74 139.7)
+			(xy 63.5 139.7) (xy 69.85 139.7)
 		)
 		(stroke
 			(width 0)
@@ -4001,23 +4163,13 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 34.29) (xy 199.39 34.29)
+			(xy 184.15 26.67) (xy 193.04 26.67)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "f9d45712-a95b-42c2-870b-ba7eb8a0a614")
-	)
-	(wire
-		(pts
-			(xy 143.51 128.27) (xy 143.51 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "face984a-4946-4837-b29e-3791b6f369f7")
 	)
 	(wire
 		(pts
@@ -18976,16 +19128,6 @@
 			"AACAoghdAAAAivIXIGkeSZfKp8UAAAAASUVORK5CYII="
 		)
 	)
-	(label "GATE2"
-		(at 143.51 128.27 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8d9249de-3298-4edd-8254-b5d60823b534")
-	)
 	(symbol
 		(lib_id "imported-project-library:3296W-1-203LF")
 		(at 55.88 139.7 180)
@@ -18998,7 +19140,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "05d2bdd3-bfff-4309-ba7e-4ce6e4691fad")
-		(property "Reference" "R4"
+		(property "Reference" "R2"
 			(at 52.07 138.4299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19098,7 +19240,7 @@
 		(instances
 			(project "pace-brake-r-core"
 				(path "/4cc5a8e0-5b78-4fc2-bf6c-33ec20b9f326"
-					(reference "R4")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -20510,7 +20652,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Socket")
-		(at 204.47 34.29 0)
+		(at 198.12 26.67 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -20521,7 +20663,7 @@
 		(fields_autoplaced yes)
 		(uuid "6916331d-ab66-46a5-82bd-24c05cee05e2")
 		(property "Reference" "J3"
-			(at 205.74 34.2899 0)
+			(at 199.39 26.6699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20532,7 +20674,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02_Socket"
-			(at 205.74 36.8299 0)
+			(at 199.39 29.2099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20543,7 +20685,7 @@
 			)
 		)
 		(property "Footprint" "Connector_AMASS:AMASS_XT30U-F_1x02_P5.0mm_Vertical"
-			(at 204.47 34.29 0)
+			(at 198.12 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20554,7 +20696,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 204.47 34.29 0)
+			(at 198.12 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20565,7 +20707,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 204.47 34.29 0)
+			(at 198.12 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20585,6 +20727,88 @@
 			(project "pace-brake-r-core"
 				(path "/4cc5a8e0-5b78-4fc2-bf6c-33ec20b9f326"
 					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:FerriteBead_Small")
+		(at 72.39 139.7 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6df89b41-6d75-4d18-8ff9-a47d67395f4e")
+		(property "Reference" "FB1"
+			(at 72.4281 135.89 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FerriteBead_Small"
+			(at 71.1582 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 72.39 137.922 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 72.39 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Ferrite bead, small symbol"
+			(at 72.39 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "b27c51a7-539e-42b4-88b6-f5264b00a6d0")
+		)
+		(pin "1"
+			(uuid "93478e1c-a6f9-4732-b1ab-001156de5476")
+		)
+		(instances
+			(project "pace-brake-r-core"
+				(path "/4cc5a8e0-5b78-4fc2-bf6c-33ec20b9f326"
+					(reference "FB1")
 					(unit 1)
 				)
 			)
@@ -20670,7 +20894,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 190.5 34.29 90)
+		(at 184.15 26.67 90)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -20682,7 +20906,7 @@
 		(fields_autoplaced yes)
 		(uuid "9039b9bd-e304-4f0d-9096-e18ec6cdf76a")
 		(property "Reference" "#FLG02"
-			(at 188.595 34.29 0)
+			(at 182.245 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20693,7 +20917,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 186.69 34.2899 90)
+			(at 180.34 26.6699 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20704,7 +20928,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 190.5 34.29 0)
+			(at 184.15 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20715,7 +20939,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 190.5 34.29 0)
+			(at 184.15 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20726,7 +20950,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 190.5 34.29 0)
+			(at 184.15 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20832,7 +21056,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 190.5 36.83 0)
+		(at 184.15 29.21 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -20843,7 +21067,7 @@
 		(fields_autoplaced yes)
 		(uuid "9b6a4ad4-1db4-4cc9-ad52-1898ff80785a")
 		(property "Reference" "#PWR055"
-			(at 190.5 43.18 0)
+			(at 184.15 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20854,7 +21078,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 190.5 41.91 0)
+			(at 184.15 34.29 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20864,7 +21088,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 190.5 36.83 0)
+			(at 184.15 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20875,7 +21099,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 190.5 36.83 0)
+			(at 184.15 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20886,7 +21110,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 190.5 36.83 0)
+			(at 184.15 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21617,6 +21841,82 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 179.07 76.2 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d3b422ec-6eb7-441e-b8f0-a5edf168bac5")
+		(property "Reference" "H2"
+			(at 181.61 74.9299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 181.61 77.4699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 179.07 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 179.07 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 179.07 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "pace-brake-r-core"
+				(path "/4cc5a8e0-5b78-4fc2-bf6c-33ec20b9f326"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+12V")
 		(at 142.24 27.94 0)
 		(unit 1)
@@ -21778,7 +22078,7 @@
 	)
 	(symbol
 		(lib_id "power:VDD")
-		(at 190.5 34.29 0)
+		(at 184.15 26.67 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -21790,7 +22090,7 @@
 		(fields_autoplaced yes)
 		(uuid "da36fdc8-c7ac-4ebf-a0ee-839a9fc45d7b")
 		(property "Reference" "#PWR015"
-			(at 190.5 38.1 0)
+			(at 184.15 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21801,7 +22101,7 @@
 			)
 		)
 		(property "Value" "VDD"
-			(at 190.5 29.21 0)
+			(at 184.15 21.59 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21811,7 +22111,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 190.5 34.29 0)
+			(at 184.15 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21822,7 +22122,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 190.5 34.29 0)
+			(at 184.15 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21833,7 +22133,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 190.5 34.29 0)
+			(at 184.15 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22099,7 +22399,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "de0dbcea-e2f6-4621-8407-fc4e83f3ebc6")
-		(property "Reference" "R2"
+		(property "Reference" "R4"
 			(at 92.456 118.872 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22163,7 +22463,7 @@
 		(instances
 			(project "pace-brake-r-core"
 				(path "/4cc5a8e0-5b78-4fc2-bf6c-33ec20b9f326"
-					(reference "R2")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -22366,31 +22666,19 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:FerriteBead_Small")
-		(at 63.5 147.32 180)
+		(lib_id "Mechanical:MountingHole")
+		(at 179.07 68.58 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "ff6b4a12-9ff9-4f35-a061-3a4d565175b3")
-		(property "Reference" "FB1"
-			(at 66.04 147.358 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "FerriteBead_Small"
-			(at 60.96 146.0882 0)
-			(hide yes)
+		(uuid "fcfe9ac8-0708-4fe2-ac43-da423d37663f")
+		(property "Reference" "H1"
+			(at 181.61 67.3099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22400,8 +22688,19 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 65.278 147.32 90)
+		(property "Value" "MountingHole"
+			(at 181.61 69.8499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 179.07 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22412,7 +22711,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 63.5 147.32 0)
+			(at 179.07 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22422,8 +22721,8 @@
 				)
 			)
 		)
-		(property "Description" "Ferrite bead, small symbol"
-			(at 63.5 147.32 0)
+		(property "Description" "Mounting Hole without connection"
+			(at 179.07 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22432,17 +22731,11 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "2"
-			(uuid "0de23dd2-3403-4540-ab44-ae1773eb4499")
-		)
-		(pin "1"
-			(uuid "e80dfa95-e9e8-48b5-9d1b-d0eeab5d8f72")
 		)
 		(instances
 			(project "pace-brake-r-core"
 				(path "/4cc5a8e0-5b78-4fc2-bf6c-33ec20b9f326"
-					(reference "FB1")
+					(reference "H1")
 					(unit 1)
 				)
 			)
